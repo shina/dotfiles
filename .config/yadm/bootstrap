@@ -1,0 +1,58 @@
+#!/bin/bash
+
+### References
+# https://github.com/hugofcampos/dotfiles
+# https://github.com/magarcia/dotfiles/
+# https://github.com/mattstratton/matty-dotfiles
+# https://github.com/freekmurze/dotfiles/
+
+system_type=$(uname -s)
+machine_name=$(scutil --get LocalHostName)
+
+if [ "$system_type" = "Darwin" ]; then
+
+  # install homebrew if it's missing
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "Installing homebrew"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+
+  if [ -f "$HOME/Brewfile" ]; then
+    echo "Updating homebrew bundle"
+    brew bundle
+    brew bundle --file ~/Brewfile.personal
+  fi
+
+fi
+
+if [ "$system_type" = "Darwin" ]; then
+
+  # possibly add something here to ensure iTerm2 is installed using Homebrew
+  # cask like in the previous example
+
+  if [ -d "$HOME/.iterm2" ]; then
+    echo "Setting iTerm preference folder"
+    defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
+  fi
+
+fi
+
+# Setup git
+git config --global credential.helper 'osxkeychain'
+git config --global user.name 'Jefferson Souza'
+git config --global user.email 'hsinfo@gmail.com'
+git config --global core.excludesfile ~/.gitignore_global
+
+echo "Updating the yadm repo origin URL"
+yadm remote set-url origin "git@github.com:jeffersonsouza/dotfiles.git"
+
+# install omz
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Setup MacOS
+chmod +x ~/.config/osx.sh && sh ~/.config/osx.sh
+
+if [ "$machine_name" = "jefferson-souza-hotelbird" ]; then
+  git config --global user.email 'jefferson.souza@hotelbird.com'
+fi

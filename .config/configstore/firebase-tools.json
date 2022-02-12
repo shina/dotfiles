@@ -1,0 +1,44 @@
+{
+	"analytics-uuid": "18f393b0-522d-446a-b640-a1842d7966b7",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1638736448795
+	},
+	"usage": false,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "110712553231789464803",
+		"email": "hsinfo@gmail.com",
+		"email_verified": true,
+		"at_hash": "FD_c5Mwdm60A-0FKbat3Fw",
+		"iat": 1638736502,
+		"exp": 1638740102
+	},
+	"tokens": {
+		"expires_at": 1638780530448,
+		"refresh_token": "1//09mVSy6obCvQmCgYIARAAGAkSNwF-L9IrNsZOfShQZTHThAqLbJRKHSw0px_sP74Qqd6SKtH4U-G9ZIM8q0_eTrRtYVM4PhXcL4A",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.a0ARrdaM_OBT6sWwZtvJUdoHM_6YLhvB6Mcv9QULU7UClBOklYVlRiQiDWfWQpg6QKIG74y2SSOIBttAaC12NYICs6npSA1s0eR7UKcsJYqWsC8qYXGxb8oaJ5tM7OmKDbCZKuCDxT4bTzDUJ6TbOyTnqfNcH63Pmj2il8Hw",
+		"expires_in": 3599,
+		"scope": "openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzNDFhYmM0MDkyYjZmYzAzOGU0MDNjOTEwMjJkZDNlNDQ1MzliNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEwNzEyNTUzMjMxNzg5NDY0ODAzIiwiZW1haWwiOiJoc2luZm9AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI1NUhDWmx3NFVleWpwM0NrUFBMMFZ3IiwiaWF0IjoxNjM4Nzc2OTMxLCJleHAiOjE2Mzg3ODA1MzF9.bV7CwONCDOAaLgp2nus0zsFxMGnZSyS2NMeIOdEwUBBY0BU2nNT6Vc-ZQEotOeGqCHGjV9TD3MLs_IyucIgrx1x4Fbjz0kvELwKIs9aNWf-Aw7EYdHqLhrtREChG64OsxM_vWuKY89Lq9xqx2mOKwI5qoghJEHeybEOqZzaJXQ9Iu4dh3dGs6nUqtVqVoRgUmeeSwPAna2gDixrZXsRwSZ9vbiFSv4TgNEQwmEumeo57AD80w-nUrtnjsFogGKqbYTF_kj8pc70sS6Mi8EG7V-d5H3cDFs2-DHRJi7HmfmUoe-cWnJoKuPmmCD-RX7R761fkSZO-wjfRM7giI5-5dA"
+	},
+	"activeProjects": {
+		"/Users/jeffersonsouza/Projects/dilucia/app/DiLucia": "di-lucia"
+	}
+}

@@ -1,0 +1,133 @@
+[[40mWARN[49m] Error loading @ionic/angular package.json: Error: Cannot find module '@ionic/angular/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @ionic/angular-toolkit package.json: Error: Cannot find module '@ionic/angular-toolkit/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular/cli package.json: Error: Cannot find module '@angular/cli/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular-devkit/build-angular package.json: Error: Cannot find module '@angular-devkit/build-angular/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular-devkit/schematics package.json: Error: Cannot find module '@angular-devkit/schematics/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @ionic/angular package.json: Error: Cannot find module '@ionic/angular/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @ionic/angular-toolkit package.json: Error: Cannot find module '@ionic/angular-toolkit/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular/cli package.json: Error: Cannot find module '@angular/cli/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular-devkit/build-angular package.json: Error: Cannot find module '@angular-devkit/build-angular/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular-devkit/schematics package.json: Error: Cannot find module '@angular-devkit/schematics/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/ios package.json: Error: Cannot find module '@capacitor/ios/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/android package.json: Error: Cannot find module '@capacitor/android/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @angular-devkit/schematics package.json: Error: Cannot find module '@angular-devkit/schematics/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/ios package.json: Error: Cannot find module '@capacitor/ios/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/android package.json: Error: Cannot find module '@capacitor/android/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/ios package.json: Error: Cannot find module '@capacitor/ios/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/android package.json: Error: Cannot find module '@capacitor/android/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/ios package.json: Error: Cannot find module '@capacitor/ios/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic
+[[40mWARN[49m] Error loading @capacitor/android package.json: Error: Cannot find module '@capacitor/android/package'
+       
+       Require stack:
+       - /usr/local/lib/node_modules/@ionic/cli/lib/project/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/lib/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/index.js
+       - /usr/local/lib/node_modules/@ionic/cli/bin/ionic

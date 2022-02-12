@@ -1,0 +1,151 @@
+alias cl="clear"
+alias ex="exit"
+
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# List alias
+alias l="ls -l"
+alias la="ls -la"
+alias ll="ls -lahG"
+alias lsd='ls -l | grep "^d"'
+alias o="open ." # Open the current directory in Finder
+
+# Merge PDF files
+# Usage: `pdfmerge -o output.pdf input{1,2,3}.pdf`
+alias pdfmerge='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+
+# Set ls color for MacOS
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  alias ls="command ls -G"
+fi
+
+# Shortcuts
+alias v="vim +NERDTreeToggle"
+
+# Quick home
+function home() {
+  cd ~/$@
+}
+
+# Add space in the Dock
+alias add-dock-space="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type=\"spacer-tile\";}' | killall Dock"
+
+# Random number
+# Usage: `rand` will produce a random number between 1 adn 6
+# Usage: `rand 100` will produce a random number between 1 and 100
+function rand() {
+  if [[ -n "$@" ]]; then
+    echo $[RANDOM%$@+1];
+  else
+    echo $[RANDOM%6+1];
+  fi;
+}
+alias rand=rand
+
+# Get a password in keychain
+# Usage `getpassword {ssid}`
+function getpassword() {
+  if [[ -n "$@" ]]; then
+    security find-generic-password -ga $@ | grep "password:"
+  else
+
+    airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
+    ssid="`$airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`"
+
+    if [[ "$ssid" != "" ]]; then
+      getpassword $ssid
+      return
+    fi;
+
+    echo "ERROR: You are not connected to any wifi so you should pass an ssid to search for: getpassword {ssid}"
+  fi;
+}
+alias getpassword=getpassword
+
+# Quick move
+alias home=home
+
+# Reload bashrc
+alias reload=". ~/.zshrc"
+
+# Apps
+alias xcode="open -a '/Developer/Applications/Xcode.app'"
+alias filemerge="open -a '/Developer/Applications/Utilities/FileMerge.app'"
+alias safari="open -a safari"
+alias firefox="open -a firefoxdeveloperedition"
+alias opera="open -a opera"
+alias chrome="open -a google\ chrome"
+alias canary="open -a google\ chrome\ canary"
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
+
+alias ion="ionic"
+alias py="python3"
+alias ions="clear && ionic serve -b"
+alias is="clear && ionic serve -b"
+
+alias a="php artisan"
+
+# Github
+alias gh="open https://github.com/jeffersonsouza"
+alias gl="open https://gitlab.com/hotelbird"
+
+# Docker
+alias d="docker"
+alias dpa="docker ps -a"
+alias dpq="docker ps -qa"
+alias drm="docker rm -f @$"
+alias di="docker images -a"
+alias dc="docker-compose"
+alias drs="docker run --rm -it $@"
+dbu() { DOCKER_BUILDKIT=1 docker build --tag $1 --file ${2:-'Dockerfile'} ${3} .;}
+
+# github repo
+# Open the git repository in the browser if git remote origin is defined
+function gh_repo() {
+  if [[ $(git remote -v 2> /dev/null) ]]; then
+    git remote -v | grep origin | awk '{ print $2 }' | head -1 | xargs open
+  else
+    echo "Can't find 'origin' repository in this path"
+  fi
+}
+
+alias repo=gh_repo
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+## Hotelbird Specific
+HOTELBIRD_ROOT="~/Hotelbird"
+alias projects="cd /Volumes/Levels/Projects"
+alias nasajon="cd /Volumes/Levels/Projects/Nasajon"
+alias hb="cd $HOTELBIRD_ROOT/code"
+
+alias api="cd $HOTELBIRD_ROOT/code/serverapp"
+alias api.serve="api && php artisan serve --host=0 --port=8000 -vvv"
+alias api.fix="api && docker-compose exec serverapp php vendor/bin/php-cs-fixer fix --using-cache=no"
+alias api.migration="docker-compose exec serverapp php artisan make:migration"
+alias api.migrate:status="docker-compose exec serverapp php artisan migrate:status"
+alias api.migrate="docker-compose exec serverapp php artisan migrate"
+alias api.migrate:rollback="docker-compose exec serverapp php artisan migrate:rollback"
+alias api.seed="docker-compose exec serverapp php artisan migrate --seed --step"
+alias api.autoload="npm run autoload && npm autoloadTest"
+alias api.test="docker-compose exec testserver php vendor/bin/phpunit"
+
+
+alias monitors='displayplacer "id:98090164-4AF4-4A2C-D4AE-D5CDD074F388 res:3008x1692 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:F37E4CE0-5624-3BD7-7AAE-7A3D78F489A4 res:1920x1200 color_depth:4 scaling:on origin:(-3612,356) degree:0" "id:7BF71A3E-015A-215C-1319-F5153E39E29E res:1692x3008 hz:60 color_depth:8 scaling:on origin:(-1692,-1692) degree:90" "id:05B572A0-231F-8308-5C95-DDC2966F5449 res:1692x3008 hz:60 color_depth:8 scaling:on origin:(3008,-1692) degree:270" "id:DAECFF5E-A0A6-CCFE-52AC-52CAD6D4C2D5 res:3008x1692 hz:60 color_depth:8 scaling:on origin:(0,-1692) degree:180"'
+
+### Projects
+alias nsj="cd /Volumes/Works/Nasajon"
+alias infnet="cd ~/Projects/computer-engineering-degree"
+alias adote="cd /Volumes/Works/Adote"
+alias sugar="cd /Volumes/Works/SugarColore"
+
+## loop 10 echo ‘hello’
+loop() {
+  for x in {1..$1}; do $@[2,-1]; done
+}

@@ -1,0 +1,73 @@
+# Brew packages
+
+brew 'go'
+brew 'youtube-dl' # Download Youtube videos
+brew 'ffmpeg' # FF MPEG for video
+brew 'ffmpeg2theora' # FF MPEG for video
+brew 'ffmpegthumbnailer' # FF MPEG for video
+brew 'gh'
+brew 'transmission-cli' # Transmission bittorrent client.
+brew 'imagemagick'
+brew 'theora'
+brew 'monit' # Monit is for managing and monitoring Unix systems.
+brew 'nmap' # nmap network mapper is a security scanner
+brew 'asciinema' # Record what you do in a terminal!
+
+# Quick Look Improvements
+cask 'apparency' # Quicklook MacApp content
+cask 'betterzip' # Preview ZIP archives
+cask 'provisionql' # Preview iOS / macOS app and provision information
+cask 'quicklookapk' # Preview Android APK files
+cask 'quicklook-pat' # Preview Adobe Photoshop pattern files
+cask 'qlcolorcode' # colored code on quick view
+cask 'qlstephen' # Preview plain text files without or with unknown file extension. Example: README, CHANGELOG, index.styl, etc.
+cask 'qlmarkdown' # markdown quick view
+cask 'quicklook-json' # JSON quick view
+cask 'qlimagesize' # image size for quick view
+cask 'quicklookase' # Preview Adobe ASE Color Swatches
+cask 'qlvideo' # Preview most types of video files, as well as their thumbnails, cover art and metadata
+cask 'suspicious-package' # Preview the contents of a standard Apple installer package
+cask 'webpquicklook' # Webp quick view
+
+
+# Cask (GUI) Apps
+
+## General Utilities
+cask 'iina' # Video player for mac with wide file support.
+cask 'paste' # clipboard manager
+# cask 'maccy' # Clipboard manager. Alternative to Paste
+cask 'notion' # Better notes manager with markdown support.
+cask 'rescuetime' # Time Tracker
+cask 'camo-studio' # To use your iPhone as camera on Mac
+cask 'licecap' # small screen recorder
+cask 'flux' # Flux dims the screen colors for better nighttime visibility.
+cask 'spotify' # online music
+cask 'vox' # Complete Music Player.
+cask 'cheatsheet' # Cheatsheet manager
+#cask 'energybar' # Supercharge your Mac Touch Bar
+cask 'appcleaner' # AppCleaner thoroughly uninstalls unwanted apps.
+cask 'authy' # OTP/multi-factor authentication.(recommended)
+
+## Communication
+cask 'telegram' # Telegram chat
+cask 'whatsapp' # Whatsapp chat
+cask 'discord' # Discord chat
+
+## non-essencial
+cask 'audio-hijack' # Dump audio from any application to be recorded, etc.
+cask 'loopback' # Creates virtual audio devices, so its a helpful audio router.
+cask 'krisp' # Noise cancellation, in case you are taking a Zoom call in a noisy area.
+cask 'pika' # Color picker manager.
+cask 'fantastical' # Calendar Manager.
+cask 'calibre' # Ebook reader and manager
+cask 'aerial' # An OS X screensaver that uses the same images/look as the Apple TV screensaver.
+#cask 'transmission' # Transmission bittorrent client.
+
+# Mac App Store Applications
+mas 'Xcode', id: 497799835
+mas 'Keynote', id: 409183694
+mas 'GarageBand', id: 682658836
+mas 'Twitter', id: 1482454543
+mas "1Password 7", id: 1333542190
+mas "1Password for Safari", id: 1569813296
+mas "NordVPN IKE", id: 1116599239

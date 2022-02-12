@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "@ionic/cli",
+      "version": "6.18.1"
+    },
+    {
+      "name": "native-run",
+      "version": "1.5.0"
+    },
+    {
+      "name": "cordova-res",
+      "version": "0.15.4"
+    }
+  ],
+  "lastUpdate": "2022-01-11T20:52:30.494Z",
+  "lastNotify": "2021-12-05T19:24:59.853Z"
+}
