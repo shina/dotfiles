@@ -121,8 +121,6 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 ## Hotelbird Specific
 HOTELBIRD_ROOT="~/Hotelbird"
-alias projects="cd /Volumes/Levels/Projects"
-alias nasajon="cd /Volumes/Levels/Projects/Nasajon"
 alias hb="cd $HOTELBIRD_ROOT/code"
 
 alias api="cd $HOTELBIRD_ROOT/code/serverapp"
@@ -139,11 +137,6 @@ alias api.test="docker-compose exec testserver php vendor/bin/phpunit"
 
 alias monitors='displayplacer "id:98090164-4AF4-4A2C-D4AE-D5CDD074F388 res:3008x1692 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:F37E4CE0-5624-3BD7-7AAE-7A3D78F489A4 res:1920x1200 color_depth:4 scaling:on origin:(-3612,356) degree:0" "id:7BF71A3E-015A-215C-1319-F5153E39E29E res:1692x3008 hz:60 color_depth:8 scaling:on origin:(-1692,-1692) degree:90" "id:05B572A0-231F-8308-5C95-DDC2966F5449 res:1692x3008 hz:60 color_depth:8 scaling:on origin:(3008,-1692) degree:270" "id:DAECFF5E-A0A6-CCFE-52AC-52CAD6D4C2D5 res:3008x1692 hz:60 color_depth:8 scaling:on origin:(0,-1692) degree:180"'
 
-### Projects
-alias nsj="cd /Volumes/Works/Nasajon"
-alias infnet="cd ~/Projects/computer-engineering-degree"
-alias adote="cd /Volumes/Works/Adote"
-alias sugar="cd /Volumes/Works/SugarColore"
 
 ## loop 10 echo ‘hello’
 loop() {
