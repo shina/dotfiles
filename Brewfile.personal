@@ -1,5 +1,3 @@
-# Brew packages
-
 brew 'go'
 brew 'youtube-dl' # Download Youtube videos
 brew 'ffmpeg' # FF MPEG for video
@@ -34,7 +32,7 @@ cask 'webpquicklook' # Webp quick view
 
 ## General Utilities
 cask 'iina' # Video player for mac with wide file support.
-cask 'paste' # clipboard manager
+#cask 'paste' # clipboard manager
 # cask 'maccy' # Clipboard manager. Alternative to Paste
 cask 'notion' # Better notes manager with markdown support.
 cask 'rescuetime' # Time Tracker
