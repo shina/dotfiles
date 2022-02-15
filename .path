@@ -1,34 +1,9 @@
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-
-#export PATH="/usr/local/Caskroom/android-sdk/4333796/build-tools/28.0.3:$PATH"
-#export PATH="/usr/local/Caskroom/android-sdk/4333796/platform-tools:$PATH"
-
-export PATH="/Users/jeffersonsouza/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export PATH="/Users/jeffersonsouza/Library/Python/3.8/bin:$PATH"
-
 python3 -m venv .venv; source .venv/bin/activate
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-export NODE_OPTIONS=--max-old-space-size=6144
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
-export GRADLE_HOME=/usr/local/opt/gradle
-export ANDROID_HOME=/usr/local/Caskroom/android-sdk/4333796/
-export ANDROID_SDK_ROOT=/usr/local/Caskroom/android-sdk/4333796/
-export PATH=$GRADLE_HOME/bin:$PATH
-export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
-export PATH=$ANDROID_HOME/build-tools/28.0.3:$PATH
-export PATH=$ANDROID_SDK_ROOT/build-tools/28.0.3:$PATH
-
-export PATH="$PATH:/Users/jeffersonsouza/.dotnet/tools"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export PATH="$HOME/.symfony/bin:$PATH"
-export NGROK_AUTH="1wr1mQGQHZwOuGxQAg2NrwkSz0n_4mHo2TMKQhTS1buUkXE5G"
 export PATH="/usr/local/sbin:$PATH"
