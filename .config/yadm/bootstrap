@@ -30,9 +30,9 @@ if [ "$system_type" = "Darwin" ]; then
   # possibly add something here to ensure iTerm2 is installed using Homebrew
   # cask like in the previous example
 
-  if [ -d "$HOME/.iterm2" ]; then
+  if [ -d "$HOME/.config/iterm2" ]; then
     echo "Setting iTerm preference folder"
-    defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
+    defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.config/iterm2"
   fi
 
 fi
@@ -51,8 +51,21 @@ yadm remote set-url origin "git@github.com:jeffersonsouza/dotfiles.git"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Setup MacOS
-chmod +x ~/.config/osx.sh && sh ~/.config/osx.sh
+chmod +x ~/.config/macos.sh && sh ~/.config/macos.sh
+
+# removing the downloaded version of yadm and reinstalling via homebrew
+sudo rm -f /usr/local/bin/yadm && brew install yadm
 
 if [ "$machine_name" = "jefferson-souza-hotelbird" ]; then
   git config --global user.email 'jefferson.souza@hotelbird.com'
 fi
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# ZSH CUSTOM
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+cd ~/Library/Fonts && {
+    curl -O 'https://github.com/Falkor/dotfiles/raw/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf'
+    cd -; }

@@ -5,7 +5,6 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/core'
-tap 'homebrew/boneyard'
 tap 'homebrew/dev-tools'
 tap 'homebrew/bundle'
 tap 'homebrew/services'
@@ -23,8 +22,8 @@ brew 'ncdu' # better disk usage visualisation
 brew 'httpie' # Improved CURL command line tool
 brew 'svg2png' # Convert svg to png in the command line
 brew 'siege' # HTTP Concurrency test tool
-brew 'font-cascadia-code' # better source code font
-brew 'font-fira-code' # better source code font
+cask 'font-cascadia-code' # better source code font
+cask 'font-fira-code' # better source code font
 brew 'ssh-copy-id' # Missing MacOS command to manage ssh keys
 brew 'tmux'
 brew 'wget' # Download (get) remote data
@@ -49,7 +48,7 @@ brew 'nmap' # nmap network mapper is a security scanner
 # brew 'kubectl' # Kubernetes command-line tool to run commands against Kubernetes clusters.
 # brew 'minikube' # Run a single-node Kubernetes cluster in a virtual machine on your personal computer.
 brew 'htop' # Improved process manager
-brew 'yadm' # I use this to manage my dotfiles
+# brew 'yadm' # I use this to manage my dotfiles
 
 # Quick Look Improvements
 cask 'apparency' # Quicklook MacApp content
@@ -93,7 +92,6 @@ cask 'ngrok' # HTTP Remote Proxy
 cask 'vmpk' # Virtual MIDI Device manager
 cask 'postman' # Full featured HTTP tests
 cask 'iterm2' # Terminal App
-cask 'wireguard' # VPN Tunnel
 cask 'charles' # Charles: enables a developer to view HTTP traffic.
 cask 'sequel-ace' # MySQL Database Manager
 cask 'cakebrew' # A GUI in front of Homebrew.
@@ -102,4 +100,4 @@ cask 'microsoft-remote-desktop' # Remote Desktop.
 ## Communication
 cask 'slack' # Slack chat
 cask 'microsoft-outlook' # Microsoft email client
-cask 'zoomus' # online meetings
+cask 'zoom' # online meetings

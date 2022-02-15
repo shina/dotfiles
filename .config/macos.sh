@@ -149,7 +149,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 echo "  › Display full POSIX path as Finder window title"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
-echo "  › Remove duplicates in the 'Open With' menu (also see `lscleanup` alias)"
+echo "  › Remove duplicates in the 'Open With' menu "
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
 echo "  › Disable Resume system-wide"
@@ -263,7 +263,7 @@ echo "  › Hibernation mode"
 # 3: Copy RAM to disk so the system state can still be restored in case of a power failure.
 sudo pmset -a hibernatemode 0
 
-echo "  › Disable the sudden motion sensor as it’s not useful for SSDs"
+echo "  › Disable the sudden motion sensor as it's not useful for SSDs"
 sudo pmset -a sms 0
 
 ###############################################################################
@@ -367,7 +367,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 echo "  › Show the full URL in the address bar (note: this still hides the scheme)"
 defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
-echo "  › Set Safari's home page to `about:blank` for faster loading"
+echo "  › Set Safari's home page to 'about:blank' for faster loading"
 defaults write com.apple.Safari HomePage -string "about:blank"
 
 echo "  › Prevent Safari from opening 'safe' files automatically after downloading"
@@ -560,7 +560,7 @@ defaults write com.twitter.twitter-mac ShowDevelopMenu -bool true
 echo "  › Open links in the background"
 defaults write com.twitter.twitter-mac openLinksInBackground -bool true
 
-echo "  › Allow closing the 'new tweet' window by pressing `Esc`"
+echo "  › Allow closing the 'new tweet' window by pressing 'Esc'"
 defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
 
 echo "  › Show full names rather than Twitter handles"
