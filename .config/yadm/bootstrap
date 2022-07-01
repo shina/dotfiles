@@ -20,7 +20,7 @@ if [ "$system_type" = "Darwin" ]; then
   if [ -f "$HOME/Brewfile" ]; then
     echo "Updating homebrew bundle"
     brew bundle
-    brew bundle --file ~/Brewfile.personal
+#    brew bundle --file ~/Brewfile.personal
   fi
 
 fi
@@ -39,32 +39,28 @@ fi
 
 # Setup git
 git config --global credential.helper 'osxkeychain'
-git config --global user.name 'Jefferson Souza'
-git config --global user.email 'hsinfo@gmail.com'
+git config --global user.name 'Leonardo Shinagawa'
+git config --global user.email 'leonardo.shinagawa@hotelbird.com'
 git config --global core.excludesfile ~/.gitignore_global
 
-echo "Updating the yadm repo origin URL"
-yadm remote set-url origin "git@github.com:jeffersonsouza/dotfiles.git"
+# echo "Updating the yadm repo origin URL"
+# yadm remote set-url origin "git@github.com:rsonsouza/dotfiles.git"
 
 # install omz
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Setup MacOS
-chmod +x ~/.config/macos.sh && sh ~/.config/macos.sh
+# chmod +x ~/.config/macos.sh && sh ~/.config/macos.sh
 
 # removing the downloaded version of yadm and reinstalling via homebrew
 sudo rm -f /usr/local/bin/yadm && brew install yadm
 
-if [ "$machine_name" = "jefferson-souza-hotelbird" ]; then
-  git config --global user.email 'jefferson.souza@hotelbird.com'
-fi
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # ZSH CUSTOM
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 cd ~/Library/Fonts && {
     curl -O 'https://github.com/Falkor/dotfiles/raw/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf'
